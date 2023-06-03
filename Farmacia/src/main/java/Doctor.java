@@ -205,7 +205,7 @@ public class Doctor extends Person {
 			int si = releaseList.get(i).getDate().compareTo(Date.valueOf(LocalDate.now()));
 			if (si >= 0) {
 				tablahtml = tablahtml + "<tr> \n" + "<td>" + releaseList.get(i).getId() + "</td> \n" + "<td>"
-						+ releaseList.get(i).getMedicine().getname() + "</td> \n" + "<td>"
+						+ releaseList.get(i).getMedicine().getName() + "</td> \n" + "<td>"
 						+ releaseList.get(i).getPatient().getMail() + "</td> \n" + "<td>" + releaseList.get(i).getDate()
 						+ "</td> \n" + "</tr> \n";
 			}
